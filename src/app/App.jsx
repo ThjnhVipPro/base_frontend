@@ -1,17 +1,6 @@
-import reactLogo from '../assets/react.svg'
+import { RouterProvider } from "react-router-dom"
+import { router } from "./Routes.jsx"
 
-
-function App() {
-
-  return (
-    <>
-      <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-    </>
-  )
+export default function App() {
+  return <RouterProvider router={router} />
 }
-
-export default App
